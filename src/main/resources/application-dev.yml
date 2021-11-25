@@ -1,0 +1,10 @@
+server:  port: 8080
+spring:
+  application:
+    name: rds-demo-app
+  jpa:    hibernate:      ddl-auto: update    show-sql: true
+    #generate-ddl: true    properties:      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver    url: jdbc:mysql://covidodb.cecgju4oubfm.ap-south-1.rds.amazonaws.com:3306/covidodb
+    username: admin
+    password: Welcome#123    initialization-mode: always    
+     
